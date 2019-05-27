@@ -1,3 +1,4 @@
+const _ = require('lodash');
 module.exports = {
   'name': 'zip compress',                                 
   'description': 'Auto-decompression of OSS uploading super-large zip compressed files by function computer',                    
