@@ -3,6 +3,7 @@ import oss2, json
 import zipfile
 import os, io
 import logging
+import chardet
 
 LOGGER = logging.getLogger()
 
