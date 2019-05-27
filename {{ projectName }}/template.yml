@@ -12,7 +12,7 @@ Resources:
         Runtime: python3
         CodeUri: './'
         EnvironmentVariables:
-          Compressed_File_Directory: {{ prefix.substr(0,prefix.length()-1) }}
+          Compressed_File_Directory: {{ prefix.substr(0,prefix.length-1) }}
           Unzip_File_Directory: {{ unzipFileDirectory }}
       Events:
         {{ projectName+'-trigger' }}:
