@@ -10,8 +10,6 @@
 <a name="cAjUK"></a>
 ## 快速开始
 
----
-
 <a name="lGvKc"></a>
 ### 1.安装 node 
 ```bash
@@ -63,7 +61,7 @@ finish rendering template.
 
 1. 输入一个 OSS 的 bucketName，注意 OSS Bucket 是全球唯一的，请输入提前创建好的 bucketName（已经创建好的，请确保 region 一致）。
 1. 输入 OSS 的 bucket 中的指定目录。用户上传压缩文件的目录。注意必须以 `/` 结尾。
-1. 输入 OSS 指定的 bucket 的某个目录，存放解压后的文件。此目录会以 `prefix` 的父目录作为根目录。注意必须以 `/` 结尾。
+1. 输入 OSS 的 bucket 中的指定目录，存放解压后的文件。此目录会以 `prefix` 的父目录作为根目录。注意必须以 `/` 结尾。
 1. 选择压缩文件的后缀名。
 
 <a name="ECcD2"></a>
