@@ -11,6 +11,17 @@ module.exports = {
       'type': 'input',                             
       'name': 'prefix',                                 
       'message': 'Please input prefix?',
+      validate: function(pre) {
+      if(_.endsWith(pre, '/')) { // 校验位数
+          return pre;
+      }
+      return "请以/结尾";
+    }
+    },
+    {
+      'type': 'input',                             
+      'name': 'unzipFileDirectory',                                 
+      'message': 'Please input unzip file directory?',
     },
     {
       'type': 'list',                             

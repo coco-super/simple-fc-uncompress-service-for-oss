@@ -11,6 +11,9 @@ Resources:
         Handler: index.handler
         Runtime: python3
         CodeUri: './'
+        EnvironmentVariables:
+          Compressed_File_Directory: {{ }}
+          Unzip_File_Directory: {{ unzipFileDirectory }}
       Events:
         {{ projectName+'-trigger' }}:
           Type: OSS # trigger type
