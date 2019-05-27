@@ -12,10 +12,10 @@ module.exports = {
       'name': 'prefix',                                 
       'message': 'Please input prefix?',
       validate: function(pre) {
-        if (pre.startsWith('/')) {
+        if (pre.endsWith('/')) {
           return pre;
         }
-        return "请以/结尾";
+        return '请以 / 结尾';
       }
     },
     {
