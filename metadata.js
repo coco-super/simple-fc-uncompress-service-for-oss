@@ -13,7 +13,7 @@ module.exports = {
       'message': 'Please input prefix?',
       validate: function(pre) {
         if (pre.endsWith('/')) {
-          return pre;
+          return true;
         }
         return '请以 / 结尾';
       }
