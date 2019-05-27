@@ -22,6 +22,12 @@ module.exports = {
       'type': 'input',                             
       'name': 'unzipFileDirectory',                                 
       'message': 'Please input unzip file directory?',
+      validate: function(dir) {
+        if (dir.endsWith('/')) {
+          return true;
+        }
+        return '请以 / 结尾';
+      }
     },
     {
       'type': 'list',                             

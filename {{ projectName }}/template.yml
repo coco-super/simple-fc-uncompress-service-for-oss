@@ -13,7 +13,7 @@ Resources:
         CodeUri: './'
         EnvironmentVariables:
           Compressed_File_Directory: {{ prefix }}
-          Unzip_File_Directory: {{ unzipFileDirectory + '/' }}
+          Unzip_File_Directory: {{ unzipFileDirectory }}
       Events:
         {{ projectName+'-trigger' }}:
           Type: OSS # trigger type
