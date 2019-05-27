@@ -29,6 +29,8 @@ def handler(event, context):
   endpoint = 'oss-' +  evt['region'] + '-internal.aliyuncs.com'
   bucket = oss2.Bucket(auth, endpoint, bucket_name)
   object_name = evt['oss']['object']['key']
+  env_dist = os.environ
+
 
   """
   When a source/ prefix object is placed in an OSS, it is hoped that the object will be decompressed and then stored in the OSS as processed/ prefixed.
@@ -40,7 +42,7 @@ def handler(event, context):
   if file_type != ".zip":
     raise RuntimeError('{} filetype is not zip'.format(object_name))
 
-  newKey = object_name.replace("source/", "processed/")
+  newKey = object_name.replace(env_dist.get('Compressed_File_Directory'), env_dist.get('Unzip_File_Directory'))
   remote_stream = bucket.get_object(object_name)
   if not remote_stream:
     raise RuntimeError('failed to get oss object. bucket: %s. object: %s' % (bucket_name, object_name))
