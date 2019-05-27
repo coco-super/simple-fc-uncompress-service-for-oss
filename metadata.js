@@ -1,4 +1,3 @@
-const _ = require('lodash');
 module.exports = {
   'name': 'zip compress',                                 
   'description': 'Auto-decompression of OSS uploading super-large zip compressed files by function computer',                    
@@ -13,11 +12,11 @@ module.exports = {
       'name': 'prefix',                                 
       'message': 'Please input prefix?',
       validate: function(pre) {
-      if(_.endsWith(pre, '/')) { // 校验位数
+        if (pre.startsWith('/')) {
           return pre;
+        }
+        return "请以/结尾";
       }
-      return "请以/结尾";
-    }
     },
     {
       'type': 'input',                             
