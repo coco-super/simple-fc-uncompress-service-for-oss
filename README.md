@@ -9,7 +9,7 @@
 
 本模板适用于**较小压缩文件**的处理，FC 从内网中拉取 OSS 中的压缩文件，然后一切在内存中完成，将解压后的文件的 bytes 上传到指定 bucket 中目录。关于函数计算实现 oss 上传压缩文件自动压缩的处理，请参照云栖社区文章[函数计算实现 oss 上传超大 zip 压缩文件的自动解压处理](https://yq.aliyun.com/articles/680958)。
 
-另外如果您有超大 zip 自动解压的需求，请使用另一[流式模板](https://github.com/coco-super/streaming-fc-uncompress-service-for-oss)，适合较大的压缩文件解压。
+另外如果您有超大的 zip 自动解压的需求，请使用另一[流式模板](https://github.com/coco-super/streaming-fc-uncompress-service-for-oss)，适合较大的压缩文件解压。
 <a name="cAjUK"></a>
 ## 快速开始
 
