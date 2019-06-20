@@ -94,7 +94,7 @@ service simple deploy success
 ### 上传压缩文件到 OSS
 在 coco-superme 的 bucket 中上传名为 HBuilderX.1.7.0.20190314.zip 的压缩文件。
 
-![image.png](http://cdn-trigger.sunfeiyu.top/img/1558971895176-b6998199-a87f-4c3a-850f-fdfccd09c672.png?Expires=1558977072&OSSAccessKeyId=TMP.AgFo55tRmQU7S8oaW2kM7lMv3gox0FNNyekQhFhyOH1MijeRHxwXHF6lDljTAAAwLAIUCoh6LVBo8CAG4p5kwqbRHpKLvTQCFGqJVJZpEhucGmW8Xn0xIiBY-lyw&Signature=r4pXqxxqyrkGdvrya4DK1JniIxc%3D)
+![1558971895176_b6998199_a87f_4c3a_850f_fdfccd09c672](https://yqfile.alicdn.com/4ce0281622c392edb529cf3d2a5a21370f8ce164.png)
 
 
 上传成功后，触发函数计算自动压缩 HBuilderX.1.7.0.20190314.zip 文件并上传回 OSS 指定目录。刷新页面，发现 processed/ 目录下已生成解压后文件。
