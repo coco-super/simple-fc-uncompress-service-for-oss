@@ -94,17 +94,17 @@ service simple deploy success
 ### 上传压缩文件到 OSS
 在 coco-superme 的 bucket 中上传名为 HBuilderX.1.7.0.20190314.zip 的压缩文件。
 
-![image.png](http://cdn-trigger.sunfeiyu.top/img/1558971895176-b6998199-a87f-4c3a-850f-fdfccd09c672.png?Expires=1558977072&OSSAccessKeyId=TMP.AgFo55tRmQU7S8oaW2kM7lMv3gox0FNNyekQhFhyOH1MijeRHxwXHF6lDljTAAAwLAIUCoh6LVBo8CAG4p5kwqbRHpKLvTQCFGqJVJZpEhucGmW8Xn0xIiBY-lyw&Signature=r4pXqxxqyrkGdvrya4DK1JniIxc%3D)
+![1.png](/figures/1.png)
 
 
 上传成功后，触发函数计算自动压缩 HBuilderX.1.7.0.20190314.zip 文件并上传回 OSS 指定目录。刷新页面，发现 processed/ 目录下已生成解压后文件。
 
-![image.png](http://cdn-trigger.sunfeiyu.top/img/1558972696484-cd92d727-9414-45ab-b8ca-26dd13a0c406.png?Expires=1558977101&OSSAccessKeyId=TMP.AgFo55tRmQU7S8oaW2kM7lMv3gox0FNNyekQhFhyOH1MijeRHxwXHF6lDljTAAAwLAIUCoh6LVBo8CAG4p5kwqbRHpKLvTQCFGqJVJZpEhucGmW8Xn0xIiBY-lyw&Signature=KURqLJ7G7BEGU7he%2FOVv38XI1R0%3D)
+![2.png](/figures/2.png)
 
 
 存储压缩文件的目录和触发函数计算解压后的文件存储目录为同级目录。
 
-![image.png](http://cdn-trigger.sunfeiyu.top/img/1558972782012-98950807-e2b8-4c38-9f36-36ecd0421b75.png?Expires=1558977127&OSSAccessKeyId=TMP.AgFo55tRmQU7S8oaW2kM7lMv3gox0FNNyekQhFhyOH1MijeRHxwXHF6lDljTAAAwLAIUCoh6LVBo8CAG4p5kwqbRHpKLvTQCFGqJVJZpEhucGmW8Xn0xIiBY-lyw&Signature=3NCjYLxe5G%2FYkyOh%2FQnfp7NtYng%3D)
+![3.png](/figures/3.png)
 <a name="2473ec5a"></a>
 ## 
 <a name="PF9c6"></a>
